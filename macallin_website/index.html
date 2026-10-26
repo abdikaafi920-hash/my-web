@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kaafi Academy | Macallinka Xisaabta & Fiisigiska</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar-wrapper">
+    <nav class="navbar container">
+      <a href="#home" class="brand-logo">
+        <div class="logo-icon">
+          <i class="fa-solid fa-atom"></i>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">Kaafi<span class="highlight">Academy</span></span>
+          <span class="brand-subtitle">Math & Physics Academy</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-item active"><i class="fa-solid fa-house"></i> Hoyga</a></li>
+        <li><a href="#profile" class="nav-item"><i class="fa-solid fa-user-tie"></i> Profile-ka</a></li>
+        <li><a href="#courses" class="nav-item"><i class="fa-solid fa-book-open"></i> Maadooyinka</a></li>
+        <li><a href="#register" class="nav-item"><i class="fa-solid fa-user-plus"></i> Diiwaangelinta</a></li>
+        <li><a href="#students" class="nav-item"><i class="fa-solid fa-users"></i> Ardayda</a></li>
+        <li><a href="#contact" class="nav-item"><i class="fa-solid fa-envelope"></i> Xiriirka</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="themeToggleBtn" class="icon-btn" title="Beddel Muuqalka (Dark/Light)">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+
+        <div id="authArea">
+          <button class="btn btn-outline" id="openLoginBtn">
+            <i class="fa-solid fa-right-to-bracket"></i> Galitaanka (Login)
+          </button>
+        </div>
+
+        <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+      <div class="hero-bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+      </div>
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-dot"></span> Ku Soo Dhowow Kaafi Academy &bull; Math & Physics
+          </div>
+          <h1 class="hero-title">
+            Fahamka <span class="text-gradient-red">Fiisigiska</span> & Qoto-Dheeraanta <span class="text-gradient-blue">Xisaabta</span>
+          </h1>
+          <p class="hero-desc">
+            Ku soo dhowow barxadda rasmiga ah ee <strong>Kaafi Academy</strong>. Macallin Kaafi wuxuu kugu hagayaa fahanka xeeldheer ee cilmiga koonka (Physics) iyo xallinta fudud ee xisaabaadka adag (Mathematics) laga bilaabo dugsi sare ilaa heer jaamacadeed.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#register" class="btn btn-primary btn-lg">
+              <i class="fa-solid fa-user-plus"></i> I Diiwaangeli Hadda
+            </a>
+            <a href="#profile" class="btn btn-glass btn-lg">
+              <i class="fa-solid fa-circle-info"></i> Baro Macallin Kaafi
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-box">
+              <div class="stat-number" id="heroStudentCount">1,250+</div>
+              <div class="stat-label">Arday La Baray</div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-box">
+              <div class="stat-number">98%</div>
+              <div class="stat-label">Heerka Baasida</div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-box">
+              <div class="stat-number">8+</div>
+              <div class="stat-label">Sano oo Khibrad ah</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-card-preview">
+            <div class="card-glow"></div>
+            <div class="preview-avatar-box">
+              <img src="assets/images/teacher_profile.jpg" alt="Sawirka Macallinka" class="preview-avatar-img">
+              <div class="preview-status-badge">
+                <i class="fa-solid fa-check"></i> Macallin Fasaxan
+              </div>
+            </div>
+            <div class="preview-info">
+              <h3 id="previewTeacherName">Ustaad Kaafi</h3>
+              <p class="role-tag"><i class="fa-solid fa-graduation-cap"></i> Kaafi Academy Founder & Senior Lecturer</p>
+              <div class="formula-tags">
+                <span>$E = mc^2$</span>
+                <span>$\int x\,dx$</span>
+                <span>$F = ma$</span>
+                <span>$\nabla \cdot B = 0$</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Teacher Profile Section -->
+    <section class="section profile-section" id="profile">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-tag"><i class="fa-solid fa-id-card"></i> Macallinkaaga</div>
+          <h2 class="section-title">Profile-ka <span class="text-gradient-red">Quruxda Badan</span> Ee Macallinka</h2>
+          <p class="section-subtitle">Baro khibradda, waxbarashada, iyo falsafadda dhigista ee macallinka</p>
+        </div>
+
+        <div class="profile-grid">
+          <!-- Profile Main Card -->
+          <div class="profile-card-main">
+            <div class="profile-cover">
+              <div class="cover-overlay"></div>
+              <div class="badge-role">Khibrad Sare &bull; 8+ Sano</div>
+            </div>
+
+            <div class="profile-body">
+              <div class="profile-avatar-wrapper">
+                <div class="avatar-ring">
+                  <img src="assets/images/teacher_profile.jpg" alt="Sawirka Macallinka" class="profile-img" id="mainProfileImg">
+                </div>
+                <div class="online-indicator" title="Fasalka wuu furan yahay"></div>
+              </div>
+
+              <div class="profile-identity">
+                <div class="identity-header">
+                  <div>
+                    <h3 class="profile-name" id="displayTeacherName">Ustaad Kaafi</h3>
+                    <p class="profile-specialty">Aasaasaha Kaafi Academy & Khabiir Xisaab & Fiisigis (M.Sc, B.Sc)</p>
+                  </div>
+                  <button class="btn btn-sm btn-outline edit-profile-btn" id="editProfileTrigger" title="Wax ka beddel faahfaahinta">
+                    <i class="fa-solid fa-pen-to-square"></i> Beddel Xogta
+                  </button>
+                </div>
+
+                <p class="profile-bio" id="displayTeacherBio">
+                  "Ku soo dhowow Kaafi Academy. Waxaan aaminsanahay in Xisaabtu tahay furaha koonka, Fiisigiskuna yahay sharciga dabiiciga ah ee wax kasta ku socdaan. Hadafkaygu waa inaan arday kasta u fududeeyo maadooyinkan, una beddelo faham qoto-dheer iyo jacayl dhab ah."
+                </p>
+
+                <!-- Subject Badges -->
+                <div class="subject-chips">
+                  <div class="chip chip-math">
+                    <i class="fa-solid fa-calculator"></i>
+                    <span>Xisaabta Sare (Pure & Applied Math)</span>
+                  </div>
+                  <div class="chip chip-physics">
+                    <i class="fa-solid fa-atom"></i>
+                    <span>Fiisigiska Guud & Farsamada (Physics)</span>
+                  </div>
+                  <div class="chip chip-gold">
+                    <i class="fa-solid fa-award"></i>
+                    <span>U Diyaarinta Imtixaanaadka Qaranka & Jaamacadda</span>
+                  </div>
+                </div>
+
+                <!-- Teacher Details List -->
+                <div class="profile-details-grid">
+                  <div class="detail-item">
+                    <div class="detail-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <div>
+                      <div class="detail-title">Shahaadada</div>
+                      <div class="detail-value" id="displayTeacherDegree">Master of Science in Theoretical Physics & Applied Mathematics</div>
+                    </div>
+                  </div>
+                  <div class="detail-item">
+                    <div class="detail-icon"><i class="fa-solid fa-briefcase"></i></div>
+                    <div>
+                      <div class="detail-title">Khibrad Shaqo</div>
+                      <div class="detail-value">8+ Sano (Dugsiyada Sare & Jaamacadaha)</div>
+                    </div>
+                  </div>
+                  <div class="detail-item">
+                    <div class="detail-icon"><i class="fa-solid fa-phone"></i></div>
+                    <div>
+                      <div class="detail-title">Taleefanka / WhatsApp</div>
+                      <div class="detail-value" id="displayTeacherPhone">+252 61 5000000</div>
+                    </div>
+                  </div>
+                  <div class="detail-item">
+                    <div class="detail-icon"><i class="fa-solid fa-envelope"></i></div>
+                    <div>
+                      <div class="detail-title">Email-ka Rasmiga ah</div>
+                      <div class="detail-value" id="displayTeacherEmail">kaafi@kaafiacademy.com</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Profile Action Buttons -->
+                <div class="profile-actions-bar">
+                  <a href="#register" class="btn btn-primary">
+                    <i class="fa-solid fa-hand-point-right"></i> Ku Biir Fasallada Macallin Kaafi
+                  </a>
+                  <a href="https://wa.me/252615000000" target="_blank" class="btn btn-whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i> La Xiriir WhatsApp
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Profile Side Highlights -->
+          <div class="profile-side-card">
+            <h3 class="side-card-title"><i class="fa-solid fa-chart-line"></i> Guulaha Macallinka</h3>
+            <div class="metric-card">
+              <div class="metric-icon-wrap icon-red">
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="metric-data">
+                <h4>Heerka Ku Qanacsanaanta</h4>
+                <div class="metric-bar-bg">
+                  <div class="metric-bar-fill" style="width: 98%;"></div>
+                </div>
+                <span class="metric-sub">98.5% (Ardayda & Waalidiinta)</span>
+              </div>
+            </div>
+
+            <div class="metric-card">
+              <div class="metric-icon-wrap icon-blue">
+                <i class="fa-solid fa-circle-check"></i>
+              </div>
+              <div class="metric-data">
+                <h4>Dhibcaha Imtixaanka Qaranka</h4>
+                <div class="metric-bar-bg">
+                  <div class="metric-bar-fill" style="width: 94%;"></div>
+                </div>
+                <span class="metric-sub">94% Ardaydu waxay helaan A & B</span>
+              </div>
+            </div>
+
+            <div class="metric-card">
+              <div class="metric-icon-wrap icon-purple">
+                <i class="fa-solid fa-video"></i>
+              </div>
+              <div class="metric-data">
+                <h4>Fasallada Tooska ah (Live Zoom)</h4>
+                <div class="metric-bar-bg">
+                  <div class="metric-bar-fill" style="width: 90%;"></div>
+                </div>
+                <span class="metric-sub">Diiwaangelin HD + Su'aalo & Jawaabo</span>
+              </div>
+            </div>
+
+            <!-- Teaching Philosophy Card -->
+            <div class="philosophy-box">
+              <div class="quote-mark"><i class="fa-solid fa-quote-left"></i></div>
+              <p>
+                "Sayniska iyo Xisaabtu maaha xifdin; waa faham, tusaaleyaal nolosha dhabta ah, iyo xalinta mushkilaadka."
+              </p>
+              <div class="quote-author">- Ustaad Kaafi (Kaafi Academy)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Subjects Offered Section -->
+    <section class="section courses-section" id="courses">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-tag"><i class="fa-solid fa-layer-group"></i> Manaahijta</div>
+          <h2 class="section-title">Maadooyinka <span class="text-gradient-blue">La Dhigo</span></h2>
+          <p class="section-subtitle">Dooro maadada aad rabto inaad ka hesho casharro toos ah iyo taageero joogto ah</p>
+        </div>
+
+        <div class="courses-grid">
+          <!-- Course Card 1: Math -->
+          <div class="course-card math-theme">
+            <div class="course-badge"><i class="fa-solid fa-square-root-variable"></i> Xisaabta (Mathematics)</div>
+            <h3 class="course-title">Xisaabta Sare & Farsamada (Pure & Applied Math)</h3>
+            <p class="course-desc">Casharro tafatiran oo ku saabsan dhammaan qeybaha xisaabta looga baahan yahay dugsiga sare iyo heerka koowaad ee jaamacadda.</p>
+            <ul class="course-features">
+              <li><i class="fa-solid fa-check-circle"></i> Calculus (Kala-duwanaanta & Isku-geynta / Derivatives & Integrals)</li>
+              <li><i class="fa-solid fa-check-circle"></i> Algebra, Matrices & Vectors</li>
+              <li><i class="fa-solid fa-check-circle"></i> Trigonometry & Xaglaha Sare</li>
+              <li><i class="fa-solid fa-check-circle"></i> Probability, Statistics & Taxanayaasha (Sequences)</li>
+            </ul>
+            <div class="course-footer">
+              <span class="course-level"><i class="fa-solid fa-signal"></i> Dhammaan Heerarka</span>
+              <button class="btn btn-sm btn-primary select-course-btn" data-subject="Mathematics">
+                Dooro Maadadan <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Course Card 2: Physics -->
+          <div class="course-card physics-theme">
+            <div class="course-badge"><i class="fa-solid fa-atom"></i> Fiisigiska (Physics)</div>
+            <h3 class="course-title">Fiisigiska Casriga ah & Tijaabooyinka (General & Modern Physics)</h3>
+            <p class="course-desc">Ku baro shuruucda dabiiciga ah qaab fudud oo tusaalooyin sawirro iyo muuqaallo leh, xallinta formulas-ka iyo imtixaanaadka.</p>
+            <ul class="course-features">
+              <li><i class="fa-solid fa-check-circle"></i> Classical Mechanics (Dhaqdhaqaaqa, Xawaaraha & Xoogga)</li>
+              <li><i class="fa-solid fa-check-circle"></i> Electromagnetism & Korontada Socota</li>
+              <li><i class="fa-solid fa-check-circle"></i> Optics, Waves & Mawjadaha Ileyska</li>
+              <li><i class="fa-solid fa-check-circle"></i> Thermodynamics & Quantum Physics Horudhac ah</li>
+            </ul>
+            <div class="course-footer">
+              <span class="course-level"><i class="fa-solid fa-signal"></i> Heerka Dhexe & Sare</span>
+              <button class="btn btn-sm btn-primary select-course-btn" data-subject="Physics">
+                Dooro Maadadan <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Course Card 3: Both Combined -->
+          <div class="course-card combo-theme">
+            <div class="course-badge badge-combo"><i class="fa-solid fa-fire"></i> Xirmada Labada Maadadood</div>
+            <h3 class="course-title">Math + Physics VIP Combo (Xisaab & Fiisigis Isku Jir)</h3>
+            <p class="course-desc">Xirmo gaar ah oo loogu talagalay ardayda doonaysa inay labada maado isku mar ku bartaan waqti ku habboon iyo qiimo dhimis gaar ah.</p>
+            <ul class="course-features">
+              <li><i class="fa-solid fa-check-circle"></i> Dhammaan Casharrada Math & Physics oo isku xiran</li>
+              <li><i class="fa-solid fa-check-circle"></i> U Diyaarinta Imtixaanka Shahaadiga (Form 4)</li>
+              <li><i class="fa-solid fa-check-circle"></i> Imtixaanno Tijaabo ah (Mock Exams) & Dib-u-eegis</li>
+              <li><i class="fa-solid fa-check-circle"></i> Taageero Gaar ah oo 1-on-1 ah</li>
+            </ul>
+            <div class="course-footer">
+              <span class="course-level"><i class="fa-solid fa-crown"></i> VIP Khibrad Buuxda</span>
+              <button class="btn btn-sm btn-primary select-course-btn" data-subject="Labadaba (Math & Physics)">
+                Dooro Maadadan <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Student Registration Section -->
+    <section class="section register-section" id="register">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-tag"><i class="fa-solid fa-file-signature"></i> Diiwaangelin Toos ah</div>
+          <h2 class="section-title">Qeybta <span class="text-gradient-red">Diiwaangelinta</span> Ardayda Cusub</h2>
+          <p class="section-subtitle">Buuxi foomka hoose si aad boos uga hesho fasallada xiga ee Macallinka</p>
+        </div>
+
+        <div class="register-wrapper">
+          <div class="register-card">
+            <div class="register-header">
+              <div class="reg-icon-box">
+                <i class="fa-solid fa-user-graduate"></i>
+              </div>
+              <div>
+                <h3>Foomka Diiwaangelinta Ardayga</h3>
+                <p>Fadlan xaqiiji in dhammaan macluumaadkaagu sax yihiin</p>
+              </div>
+            </div>
+
+            <form id="studentRegistrationForm" class="registration-form" novalidate>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="fullName"><i class="fa-solid fa-user"></i> Magaca Ardayga oo Saddexan *</label>
+                  <input type="text" id="fullName" class="form-control" placeholder="Tusaale: Maxamed Cali Warsame" required>
+                  <span class="error-feedback" id="nameError"></span>
+                </div>
+
+                <div class="form-group col-md-6">
+                  <label for="phoneNumber"><i class="fa-solid fa-phone"></i> Lambarka Taleefanka / WhatsApp *</label>
+                  <input type="tel" id="phoneNumber" class="form-control" placeholder="Tusaale: +252 61 1234567" required>
+                  <span class="error-feedback" id="phoneError"></span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="emailAddress"><i class="fa-solid fa-envelope"></i> Email-ka (Haddii aad leedahay)</label>
+                  <input type="email" id="emailAddress" class="form-control" placeholder="tusaale@gmail.com">
+                  <span class="error-feedback" id="emailError"></span>
+                </div>
+
+                <div class="form-group col-md-6">
+                  <label for="subjectSelect"><i class="fa-solid fa-book"></i> Dooro Maadada aad Rabto *</label>
+                  <select id="subjectSelect" class="form-control" required>
+                    <option value="" disabled selected>-- Dooro Maadada --</option>
+                    <option value="Mathematics">Xisaab (Mathematics)</option>
+                    <option value="Physics">Fiisigis (Physics)</option>
+                    <option value="Labadaba (Math & Physics)">Labadaba (Math & Physics)</option>
+                  </select>
+                  <span class="error-feedback" id="subjectError"></span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group col-md-4">
+                  <label for="educationLevel"><i class="fa-solid fa-school"></i> Heerka Waxbarasho *</label>
+                  <select id="educationLevel" class="form-control" required>
+                    <option value="" disabled selected>-- Dooro Heerkaaga --</option>
+                    <option value="Fasalka 1aad Dugsiga Sare (Form 1)">Fasalka 1aad Dugsiga Sare (Form 1)</option>
+                    <option value="Fasalka 2aad Dugsiga Sare (Form 2)">Fasalka 2aad Dugsiga Sare (Form 2)</option>
+                    <option value="Fasalka 3aad Dugsiga Sare (Form 3)">Fasalka 3aad Dugsiga Sare (Form 3)</option>
+                    <option value="Fasalka 4aad Shahaadiga (Form 4)">Fasalka 4aad Shahaadiga (Form 4)</option>
+                    <option value="Heer Jaamacadeed (University)">Heer Jaamacadeed (University)</option>
+                    <option value="Is-Barid Madaxbannaan (Self-Study)">Is-Barid Madaxbannaan (Self-Study)</option>
+                  </select>
+                  <span class="error-feedback" id="levelError"></span>
+                </div>
+
+                <div class="form-group col-md-4">
+                  <label for="classType"><i class="fa-solid fa-desktop"></i> Nooca Fasalka *</label>
+                  <select id="classType" class="form-control" required>
+                    <option value="" disabled selected>-- Habka Fasalka --</option>
+                    <option value="Online (Zoom / Google Meet)">Online (Zoom / Google Meet)</option>
+                    <option value="Fasalka Caadiga ah (Physical)">Fasalka Caadiga ah (Physical)</option>
+                    <option value="Koorso Gaar ah (1-on-1 VIP)">Koorso Gaar ah (1-on-1 VIP)</option>
+                  </select>
+                  <span class="error-feedback" id="classTypeError"></span>
+                </div>
+
+                <div class="form-group col-md-4">
+                  <label for="shiftSelect"><i class="fa-solid fa-clock"></i> Xilliga Kaa Habaan *</label>
+                  <select id="shiftSelect" class="form-control" required>
+                    <option value="" disabled selected>-- Dooro Xilliga --</option>
+                    <option value="Subaxnimo (8:00 AM - 10:00 AM)">Subaxnimo (8:00 AM - 10:00 AM)</option>
+                    <option value="Galabnimo (2:00 PM - 4:00 PM)">Galabnimo (2:00 PM - 4:00 PM)</option>
+                    <option value="Habeennimo (7:30 PM - 9:30 PM)">Habeennimo (7:30 PM - 9:30 PM)</option>
+                    <option value="Jimce & Sabti (Weekend)">Jimce & Sabti (Weekend)</option>
+                  </select>
+                  <span class="error-feedback" id="shiftError"></span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="studentNotes"><i class="fa-solid fa-comment-dots"></i> Qoraal ama Su'aal dheeraad ah (Ikhtiyaari)</label>
+                <textarea id="studentNotes" class="form-control" rows="3" placeholder="Haddii ay jirto qodob gaar ah oo aad doonayso in macallinku kaa caawiyo, halkaan ku qor..."></textarea>
+              </div>
+
+              <div class="form-footer">
+                <button type="submit" class="btn btn-primary btn-lg btn-submit" id="submitRegBtn">
+                  <i class="fa-solid fa-check"></i> Xaqiiji & Diiwaangeli Ardayga
+                </button>
+                <button type="reset" class="btn btn-outline">
+                  <i class="fa-solid fa-rotate-left"></i> Nadiifi Foomka
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <!-- Registration Info Aside -->
+          <div class="register-aside">
+            <div class="info-card">
+              <div class="info-icon"><i class="fa-solid fa-bolt"></i></div>
+              <h4>Maxaa ku xiga diiwaangelinta?</h4>
+              <p>Markaad foomka buuxiso, magacaagu wuxuu si toos ah uga muuqan doonaa liiska ardayda diiwaangashan. Macallinku wuxuu kaloo kugu soo dari doonaa kooxda rasmiga ah ee WhatsApp.</p>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon"><i class="fa-solid fa-shield-halved"></i></div>
+              <h4>Amniga Xogtaada</h4>
+              <p>Dhammaan macluumaadkaaga taleefanka iyo waxbarashada waxaa loo hayaa si ammaan ah oo gaar ah.</p>
+            </div>
+
+            <div class="info-card card-highlight">
+              <div class="info-icon"><i class="fa-solid fa-headset"></i></div>
+              <h4>Ma u baahan tahay Caawimaad?</h4>
+              <p>Haddii aad diiwaangelinta wax dhibaato ah kala kulanto, toos ula hadal macallinka:</p>
+              <a href="https://wa.me/252615000000" class="btn btn-sm btn-whatsapp full-width">
+                <i class="fa-brands fa-whatsapp"></i> WhatsApp Direct Chat
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Registered Students List / Management Section -->
+    <section class="section students-section" id="students">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag"><i class="fa-solid fa-clipboard-list"></i> Maamulka & Liiska</div>
+          <div class="header-split">
+            <div>
+              <h2 class="section-title">Ardayda <span class="text-gradient-red">Diiwaangashan</span></h2>
+              <p class="section-subtitle">Liiska tooska ah ee ardayda qaatay boosaska maadooyinka Xisaabta & Fiisigiska</p>
+            </div>
+            <div class="list-actions">
+              <button class="btn btn-outline btn-sm" id="exportCsvBtn" title="Soo deji faylka CSV">
+                <i class="fa-solid fa-file-csv"></i> Soo Deji CSV
+              </button>
+              <button class="btn btn-outline btn-sm" id="printListBtn" title="Daabac liiska">
+                <i class="fa-solid fa-print"></i> Daabac Liiska
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="table-controls-card">
+          <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="studentSearchInput" placeholder="Ka raadi magac, taleefan, ama maaddo...">
+          </div>
+
+          <div class="filter-group">
+            <div class="filter-item">
+              <label for="filterSubject"><i class="fa-solid fa-filter"></i> Maadada:</label>
+              <select id="filterSubject">
+                <option value="all">Dhammaan Maadooyinka</option>
+                <option value="Mathematics">Xisaab (Math)</option>
+                <option value="Physics">Fiisigis (Physics)</option>
+                <option value="Labadaba">Labadaba (Math & Physics)</option>
+              </select>
+            </div>
+
+            <div class="filter-item">
+              <label for="filterClassType"><i class="fa-solid fa-chalkboard-user"></i> Fasalka:</label>
+              <select id="filterClassType">
+                <option value="all">Dhammaan Noocyada</option>
+                <option value="Online">Online Zoom</option>
+                <option value="Physical">Fasalka Caadiga ah</option>
+                <option value="VIP">1-on-1 VIP</option>
+              </select>
+            </div>
+
+            <button class="btn btn-sm btn-glass" id="resetFiltersBtn" title="Dib u celi raadinta">
+              <i class="fa-solid fa-arrow-rotate-left"></i> Nadiifi
+            </button>
+          </div>
+        </div>
+
+        <!-- Student Summary Counters -->
+        <div class="students-stat-bar">
+          <div class="stat-pill">
+            <span class="pill-dot red"></span>
+            <span>Wadarta Ardayda: <strong id="totalStudentsCount">0</strong></span>
+          </div>
+          <div class="stat-pill">
+            <span class="pill-dot blue"></span>
+            <span>Xisaab (Math): <strong id="mathCount">0</strong></span>
+          </div>
+          <div class="stat-pill">
+            <span class="pill-dot purple"></span>
+            <span>Fiisigis (Physics): <strong id="physicsCount">0</strong></span>
+          </div>
+          <div class="stat-pill">
+            <span class="pill-dot gold"></span>
+            <span>Labadaba: <strong id="bothCount">0</strong></span>
+          </div>
+        </div>
+
+        <!-- Students Table -->
+        <div class="table-responsive">
+          <table class="students-table" id="studentsTable">
+            <thead>
+              <tr>
+                <th>#ID</th>
+                <th>Magaca Ardayga</th>
+                <th>Taleefanka / WhatsApp</th>
+                <th>Maadada</th>
+                <th>Heerka Waxbarasho</th>
+                <th>Nooca Fasalka</th>
+                <th>Xilliga</th>
+                <th>Taariikhda</th>
+                <th class="text-center">Falalka</th>
+              </tr>
+            </thead>
+            <tbody id="studentsTableBody">
+              <!-- Dynamically populated via JavaScript -->
+            </tbody>
+          </table>
+        </div>
+
+        <div id="noStudentsMsg" class="no-records-card" style="display: none;">
+          <i class="fa-solid fa-user-slash"></i>
+          <h4>Ma jirto arday ku habboon raadintaada</h4>
+          <p>Fadlan hubi ereyada aad galisay ama dib u celi filtarka.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Location Section -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-tag"><i class="fa-solid fa-paper-plane"></i> Xiriirka Macallinka</div>
+          <h2 class="section-title">Nagala <span class="text-gradient-red">Soo Xiriir</span></h2>
+          <p class="section-subtitle">Ma qabtaa su'aalo ku saabsan waqtiyada ama manhajka? Nala soo xiriir wakhti kasta</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info-card">
+            <h3>Xogta Xiriirka Tooska ah</h3>
+            <p>Macallinku wuxuu diyaar u yahay ka jawaabista dhammaan su'aalaha ardayda iyo waalidiinta.</p>
+
+            <div class="contact-methods">
+              <div class="contact-box">
+                <div class="c-icon"><i class="fa-solid fa-phone"></i></div>
+                <div>
+                  <h4>Taleefan</h4>
+                  <p id="contactPhoneDisplay">+252 61 5000000 / +252 62 5000000</p>
+                </div>
+              </div>
+
+              <div class="contact-box">
+                <div class="c-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                <div>
+                  <h4>WhatsApp</h4>
+                  <p>Fariin toos ah u dir macallinka 24/7</p>
+                </div>
+              </div>
+
+              <div class="contact-box">
+                <div class="c-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div>
+                  <h4>Email</h4>
+                  <p id="contactEmailDisplay">kaafi@kaafiacademy.com</p>
+                </div>
+              </div>
+
+              <div class="contact-box">
+                <div class="c-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                  <h4>Xarunta Waxbarashada</h4>
+                  <p>Mogadishu, Somalia (Fasallada Caadiga ah & Online Zoom)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="quick-msg-card">
+            <h3>U Dir Fariin Toos ah Macallin Kaafi</h3>
+            <form id="quickContactForm">
+              <div class="form-group">
+                <label for="contactSenderName">Magacaaga</label>
+                <input type="text" id="contactSenderName" class="form-control" placeholder="Geli magacaaga" required>
+              </div>
+              <div class="form-group">
+                <label for="contactSenderPhone">Taleefankaaga</label>
+                <input type="tel" id="contactSenderPhone" class="form-control" placeholder="+252 61..." required>
+              </div>
+              <div class="form-group">
+                <label for="contactSenderMsg">Fariintaada</label>
+                <textarea id="contactSenderMsg" class="form-control" rows="4" placeholder="Qor su'aashaada ku saabsan fasallada Kaafi Academy..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary full-width">
+                <i class="fa-solid fa-paper-plane"></i> Dir Fariinta Hadda
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <div class="brand-logo">
+          <div class="logo-icon"><i class="fa-solid fa-atom"></i></div>
+          <span class="brand-title">Kaafi<span class="highlight">Academy</span></span>
+        </div>
+        <p>Barta rasmiga ah ee Kaafi Academy - Barashada Xisaabta iyo Fiisigiska oo heer sare ah.</p>
+      </div>
+
+      <div class="footer-links-group">
+        <h4>Xiriiriyeyaal Faa'iido leh</h4>
+        <ul>
+          <li><a href="#home">Hoyga</a></li>
+          <li><a href="#profile">Profile-ka Macallin Kaafi</a></li>
+          <li><a href="#courses">Maadooyinka</a></li>
+          <li><a href="#register">Diiwaangelinta Ardayda</a></li>
+          <li><a href="#students">Liiska Ardayda</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-social">
+        <h4>Naga Raac Baraha Bulshada</h4>
+        <div class="social-icons">
+          <a href="#" class="social-btn" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-btn" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" class="social-btn" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
+          <a href="#" class="social-btn" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom text-center">
+      <p>&copy; 2026 Kaafi Academy (Math & Physics). Dhammaan xuquuqdu way dhowran tahay.</p>
+    </div>
+  </footer>
+
+  <!-- ==================== MODALS ==================== -->
+
+  <!-- Login Modal -->
+  <div class="modal-overlay" id="loginModal">
+    <div class="modal-container">
+      <button class="modal-close-btn" id="closeLoginModalBtn">&times;</button>
+      
+      <div class="modal-header text-center">
+        <div class="modal-icon-badge">
+          <i class="fa-solid fa-lock"></i>
+        </div>
+        <h3 class="modal-title">Galaangalka Nidaamka (Login)</h3>
+        <p class="modal-subtitle">Dooro nooca akoonka aad ku galayso Kaafi Academy</p>
+      </div>
+
+      <!-- Role Tabs -->
+      <div class="auth-role-tabs">
+        <button class="auth-tab-btn active" data-role="teacher">
+          <i class="fa-solid fa-chalkboard-user"></i> Macallin (Admin)
+        </button>
+        <button class="auth-tab-btn" data-role="student">
+          <i class="fa-solid fa-user-graduate"></i> Arday (Student)
+        </button>
+      </div>
+
+      <!-- Login Form -->
+      <form id="loginForm" class="modal-form">
+        <div class="form-group">
+          <label for="loginEmail"><i class="fa-solid fa-envelope"></i> Email Address</label>
+          <input type="email" id="loginEmail" class="form-control" placeholder="kaafi@kaafiacademy.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="loginPassword"><i class="fa-solid fa-key"></i> Furaha Sirta ah (Password)</label>
+          <div class="password-input-wrap">
+            <input type="password" id="loginPassword" class="form-control" placeholder="••••••••" required>
+            <button type="button" class="toggle-password-btn" id="togglePasswordBtn">
+              <i class="fa-solid fa-eye"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="form-helper-row">
+          <label class="remember-label">
+            <input type="checkbox" id="rememberMe"> I Xusuuso
+          </label>
+          <a href="#" class="forgot-link" id="forgotPasswordLink">Ma ilowday furaha?</a>
+        </div>
+
+        <!-- Quick Demo Hint Box -->
+        <div class="demo-credentials-box" id="demoCredentialsHint">
+          <p><strong><i class="fa-solid fa-lightbulb"></i> Tijaabada Macallinka (Demo Login):</strong></p>
+          <p>Email: <code>kaafi@kaafiacademy.com</code> | Furaha: <code>admin123</code></p>
+          <p class="demo-student-hint" style="display:none;">Ama Arday ahaan: <code>arday@kaafiacademy.com</code> | Furaha: <code>arday123</code></p>
+        </div>
+          <p class="demo-student-hint" style="display:none;">Ama Arday ahaan: <code>arday@mathphys.edu</code> | Furaha: <code>arday123</code></p>
+        </div>
+
+        <button type="submit" class="btn btn-primary full-width btn-lg">
+          <i class="fa-solid fa-arrow-right-to-bracket"></i> Gal Hadda (Login)
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Student Detail / Edit Modal -->
+  <div class="modal-overlay" id="studentDetailModal">
+    <div class="modal-container">
+      <button class="modal-close-btn" id="closeDetailModalBtn">&times;</button>
+      <div class="modal-header">
+        <div class="modal-icon-badge">
+          <i class="fa-solid fa-address-card"></i>
+        </div>
+        <h3 class="modal-title" id="detailModalTitle">Faahfaahinta Ardayga</h3>
+      </div>
+      <div class="student-detail-content" id="studentDetailContent">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Edit Teacher Profile Modal -->
+  <div class="modal-overlay" id="editProfileModal">
+    <div class="modal-container">
+      <button class="modal-close-btn" id="closeEditProfileBtn">&times;</button>
+      <div class="modal-header">
+        <div class="modal-icon-badge">
+          <i class="fa-solid fa-user-pen"></i>
+        </div>
+        <h3 class="modal-title">Wax Ka Beddel Xogta Profile-ka</h3>
+        <p class="modal-subtitle">Halkan waxaad ku beddeli kartaa magacaaga, cinwaankaaga iyo xogtaada kale</p>
+      </div>
+
+      <form id="editProfileForm" class="modal-form">
+        <div class="form-group">
+          <label for="inputTeacherName">Magaca Macallinka</label>
+          <input type="text" id="inputTeacherName" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="inputTeacherDegree">Shahaadada / Takhasuska</label>
+          <input type="text" id="inputTeacherDegree" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="inputTeacherBio">Bio / Falsafaddaada</label>
+          <textarea id="inputTeacherBio" class="form-control" rows="3" required></textarea>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputTeacherPhone">Taleefanka / WhatsApp</label>
+            <input type="tel" id="inputTeacherPhone" class="form-control" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputTeacherEmail">Email-ka</label>
+            <input type="email" id="inputTeacherEmail" class="form-control" required>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary full-width">
+          <i class="fa-solid fa-floppy-disk"></i> Kaydi Isbeddellada
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
